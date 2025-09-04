@@ -1,11 +1,12 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap');
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -32,6 +33,88 @@ body {
   color: var(--dark-color);
   overflow-x: hidden;
 }
+
+body.dark-theme {
+  --light-color: #000;
+  --dark-color: #fff;
+  --border-to-color: rgba(255, 255, 255, .1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  display: inline-block
+}
+
+i {
+  font-size: 2.4rem;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+/* REUSABLE CLASSES */
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding-block: var(--section-vertical-spacing);
+  position: relative;
+}
+
+.section:not(.hero)::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 101, 118, .08) 0%, rgba(255, 101, 118, 0) 100%);
+  z-index: -1;
+}
+
+.has-sparkles,
+.has-sparkles-alt {
+  position: relative;
+}
+
+.has-sparkles::before,
+.has-sparkles::after {
+  content: '';
+  position: absolute;
+  background: url('../images/sparkle.png') center no-repeat;
+  background-size: cover;
+}
+
+.d-grid {
+  display: grid;
+}
+
 
 /* JAVASCRIPT STYLES */
 .active.menu {
