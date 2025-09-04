@@ -33,6 +33,34 @@ body {
   overflow-x: hidden;
 }
 
+/* JAVASCRIPT STYLES */
+.active.menu {
+  z-index: initial;
+  pointer-events: initial;
+  transform: scale(1) translateY(4.5rem);
+}
+
+.active.menu > .list {
+  opacity: 1;
+  transition: opacity .1s .5s; 
+}
+
+.active .open-icon {
+  display: none;
+}
+
+.active .close-icon {
+  display: block;
+}
+
+.dark-theme .theme-off {
+  display: none;
+}
+
+.dark-theme .theme-on {
+  display: block;
+}
+
 /* HEADER */
 .header {
   margin-bottom: 5rem;
@@ -141,7 +169,7 @@ body {
 .inline-image {
   width: 7rem;
   height: 7rem;
-  background: url('../images/statue_hero.png') top center no-repeat;
+  background: url('./assets/statue_hero.png') top center no-repeat;
   background-size: cover;
   border-radius: 50%;
   border-bottom-left-radius: 0;
@@ -150,7 +178,7 @@ body {
 
 .dark-theme .has-sparkles::before,
 .dark-theme .has-sparkles::after {
-  background: url('../images/sparkle_light.png') top center no-repeat;
+  background: url('./assets/sparkle_light.png') top center no-repeat;
   background-size: cover;
 }
 
@@ -176,12 +204,12 @@ body {
   max-width: 5rem;
   height: 5vw;
   max-height: 5rem;
-  background: url('../images/sparkle_alt.png') center no-repeat;
+  background: url('./assets/sparkle_alt.png') center no-repeat;
   background-size: cover;
 }
 
 .dark-theme .has-sparkles-alt::after {
-  background: url('../images/sparkle_alt_light.png') center no-repeat;
+  background: url('./assets/sparkle_alt_light.png') center no-repeat;
   background-size: cover;
 }
 
