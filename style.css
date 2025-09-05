@@ -73,8 +73,6 @@ textarea {
   outline: none;
 }
 
-
-/* REUSABLE CLASSES */
 .container {
   max-width: 54rem;
   margin: 0 auto;
@@ -107,7 +105,7 @@ textarea {
 .has-sparkles::after {
   content: '';
   position: absolute;
-  background: url('../images/sparkle.png') center no-repeat;
+  background: url('./assets/sparkle.png') center no-repeat;
   background-size: cover;
 }
 
@@ -252,7 +250,7 @@ textarea {
 .inline-image {
   width: 7rem;
   height: 7rem;
-  background: url('./assets/statue_hero.png') top center no-repeat;
+  background: url('./assets/surfingTheWeb.gif') top center no-repeat;
   background-size: cover;
   border-radius: 50%;
   border-bottom-left-radius: 0;
@@ -541,6 +539,49 @@ textarea {
 .button-fill:hover::before,
 .button-fill:focus::before {
   transform: scale(1);
+}
+
+/* CONTACT STYLES */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform .25s;
+}
+
+.input input {
+  width: 100%;
+  border-bottom: 1px solid var(--dark-color);
+  padding: .5rem;
+}
+
+.input input:focus+.input-label {
+  transform: translateY(-2.5rem);
+}
+
+.form-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.required-field {
+  font-size: 1rem;
+  color: #ff7575;
+  transform: translateY(-.8rem);
 }
 
 /* MEDIA QUERIES  */

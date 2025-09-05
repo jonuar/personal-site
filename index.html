@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>HELLO</title>
 </head>
 
@@ -12,7 +14,7 @@
     <!-- HEADER -->
     <header class="header" id="home">
         <nav class="navbar container">
-            <a href="index.html" class="logo">JOSHUA.</a>
+            <a href="index.html" class="logo">HELLO.</a>
             <div class="navbar-buttons">
                 <button type="button" class="button icon-button menu-toggle-button">
                     <i class="bx bx-menu open-icon"></i>
@@ -49,9 +51,10 @@
     <section class="hero">
         <div class="container">
             <h1 class="title main-title">
-                <span class="inline-image has-sparkles"></span>
-                <br>Web
+                Web <span class="inline-image has-sparkles"></span>
+                <!-- <br>Web -->
                 <br>develope<span class="has-sparkles-alt">r</span>
+
             </h1>
         </div>
     </section>
@@ -103,8 +106,8 @@
             <div class="section-title-container">
                 <h2 class="title section-title">Recent</h2>
                 <div class="section-subtitle-container">
-                    <span class="subtitle-number has-sparkles">02</span>
                     <h5 class="title section-subtitle">Projects</h5>
+                    <span class="subtitle-number has-sparkles">02</span>
                 </div>
             </div>
 
@@ -114,7 +117,7 @@
                         <img src="./assets/mntn.png" alt="">
                     </div>
                     <div class="card-heading">
-                        <h5 class="card-title">MNTN</h5>
+                        <h5 class="card-title">WEB1</h5>
                         <span class="card-subtitle">Web Design & DevelopmentProject</span>
                     </div>
                 </a>
@@ -124,7 +127,7 @@
                         <img src="./assets/blockchained.png" alt="">
                     </div>
                     <div class="card-heading">
-                        <h5 class="card-title">BLOCKCHAINED</h5>
+                        <h5 class="card-title">WEB2</h5>
                         <span class="card-subtitle">App Design</span>
                     </div>
                 </a>
@@ -134,7 +137,7 @@
                         <img src="./assets/recehtok.png" alt="">
                     </div>
                     <div class="card-heading">
-                        <h5 class="card-title">RECEHTOK</h5>
+                        <h5 class="card-title">WEB3</h5>
                         <span class="card-subtitle">Dashboard Design</span>
                     </div>
                 </a>
@@ -144,8 +147,8 @@
                         <img src="./assets/rsound.png" alt="">
                     </div>
                     <div class="card-heading">
-                        <h5 class="card-title">RSOUND</h5>
-                        <span class="card-subtitle">Web Designt</span>
+                        <h5 class="card-title">WEB4</h5>
+                        <span class="card-subtitle">Web Design</span>
                     </div>
                 </a>
 
@@ -154,7 +157,7 @@
                         <img src="./assets/landie.png" alt="">
                     </div>
                     <div class="card-heading">
-                        <h5 class="card-title">LANDIE</h5>
+                        <h5 class="card-title">WEB5</h5>
                         <span class="card-subtitle">Web Design</span>
                     </div>
                 </a>
@@ -166,6 +169,60 @@
                         All
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION  -->
+    <section class="get-in-touch section" id="contact">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="title section-title">Get in</h2>
+                <div class="section-subtitle-container">
+                    <h5 class="title section-subtitle">touch</h5>
+                    <span class="subtitle-number has-sparkles">03</span>
+                </div>
+            </div>
+
+            <div class="section-description d-grid">
+                <div class="scroll-reveal-left">
+                    <p class="description">
+                        If <span class="text-bold">You </span> would like to work <span class="text-bold">together
+                        </span> on a <span class="text-bold">project </span>, please fill out the <span
+                            class="texto-bold">form </span> below. I can't wait to turn your <span
+                            class="text-bold">ideas </span> into <span class="text-bold">reality</span>!
+                    </p>
+                </div>
+                <div class="scroll-reveal-right">
+                    <div class="description-image has-sparkles">
+                        <img src="./assets/get_in_touch.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form action="" class="contact-form">
+                    <div class="input-group">
+
+                        <div class="input">
+                            <input type="text" id="name" required>
+                            <label for="name" class="input-label">Name <span class="required-field">*</span></label>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" id="email" required>
+                            <label for="email" class="input-label">Email <span class="required-field">*</span></label>
+                        </div>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" id="message" required>
+                        <label for="message" class="input-label">Message <span class="required-field">*</span></label>
+                    </div>
+
+                    <button type="submit" class="button form-button button-fill">Send message</button>
+                </form>
+
             </div>
         </div>
     </section>
