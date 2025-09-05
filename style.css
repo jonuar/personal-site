@@ -191,6 +191,33 @@ textarea {
   display: none;
 }
 
+/* MENU TOGGLE BUTTON */
+.menu-toggle-button .open-icon {
+  display: block;
+}
+.menu-toggle-button .close-icon {
+  display: none;
+}
+.menu-toggle-button.active .open-icon {
+  display: none;
+}
+.menu-toggle-button.active .close-icon {
+  display: block;
+}
+
+.theme-toggle-button .theme-on {
+  display: none;
+}
+.theme-toggle-button .theme-off {
+  display: block;
+}
+body.dark-theme .theme-toggle-button .theme-off {
+  display: none;
+}
+body.dark-theme .theme-toggle-button .theme-on {
+  display: block;
+}
+
 .menu {
   position: absolute;
   right: 1.55rem;
@@ -250,10 +277,10 @@ textarea {
 .inline-image {
   width: 7rem;
   height: 7rem;
-  background: url('./assets/surfingTheWeb.gif') top center no-repeat;
+  background: url('./assets/www.gif') top center no-repeat;
   background-size: cover;
   border-radius: 50%;
-  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   margin: 0 1.5rem;
 }
 
