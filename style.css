@@ -399,7 +399,7 @@ textarea {
   transform: translateY(calc(-100% + -.5rem));
 }
 
-/* PORTFOLIO STYLES */
+/* PORTFOLIO */
 .section-title-container {
   display: inline-block;
   margin-bottom: 5rem;
@@ -541,7 +541,7 @@ textarea {
   transform: scale(1);
 }
 
-/* CONTACT STYLES */
+/* CONTACT */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -576,6 +576,46 @@ textarea {
   padding: 1rem 2rem;
   text-transform: uppercase;
   margin: 0 auto;
+}
+
+/* FOOTER  */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-top-color);
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer .list-link {
+  color: var(--dark-color);
+}
+
+.scroll-top {
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+}
+
+
+/* SCROLLBAR  */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3bbce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #808694;
 }
 
 .required-field {
